@@ -1,0 +1,7 @@
+// Handle "Previous" button
+if (isset($_POST['previous'])) {
+    $_SESSION['QNO'] = max(1, $_SESSION['QNO'] - 1); // Ensure question number does not go below 1
+}
+
+
+next button ($_SESSION['QNO'] = min($totalQuestions, $_SESSION['QNO'] + 1); // Ensure question number doesn't exceed total questions)
